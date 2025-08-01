@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Renamer Options</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 600px;
+      padding: 10px;
+    }
+    input[type='text'] {
+      width: 95%;
+      padding: 8px;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+    #add-rule {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    hr {
+        border: 0;
+        height: 3px;
+        background: #666;
+        margin: 25px 0;
+    }
+    #rules-list .rule {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5em;
+      padding: 15px 5px;
+      border-bottom: 1px solid #ccc;
+    }
+    #rules-list .rule:last-child {
+      border-bottom: none;
+    }
+    .rule button {
+      background: none;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Renaming Rules</h1>
+  
+  <h2>Add New Rule</h2>
+  <input id="url-fragment" type="text" placeholder="URL fragment (e.g., 'google.com')">
+  <input id="new-name" type="text" placeholder="New tab name">
+  <button id="add-rule">Add Rule</button>
+
+  <hr>
+
+  <h2>Existing Rules</h2>
+  <div id="rules-list"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
