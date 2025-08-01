@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Tab Title Renamer",
+  "name": "Tab Renmae-自定义标签页名字",
   "version": "1.0",
   "description": "Allows users to rename browser tabs directly or by setting up automatic renaming rules.",
   "permissions": [
@@ -12,7 +12,15 @@
     "<all_urls>"
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   },
   "background": {
     "service_worker": "background.js"
